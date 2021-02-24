@@ -1,5 +1,5 @@
-/Users/yvesdebeer/Developer/UCLL/bluestore/services/product-crudservice/src/main/java/com/ibm/product/ProductApplication.java
-/Users/yvesdebeer/Developer/UCLL/bluestore/services/product-crudservice/src/main/java/com/ibm/product/ProductRepository.java
-/Users/yvesdebeer/Developer/UCLL/bluestore/services/product-crudservice/src/main/java/com/ibm/product/ProductService.java
-/Users/yvesdebeer/Developer/UCLL/bluestore/services/product-crudservice/src/main/java/com/ibm/product/Product.java
-/Users/yvesdebeer/Developer/UCLL/bluestore/services/product-crudservice/src/main/java/com/ibm/product/ProductController.java
+/Users/yvesdebeer/Developer/UCLL/bluestore/products-java-spring-boot/src/main/java/com/ibm/product/ProductRepository.java
+/Users/yvesdebeer/Developer/UCLL/bluestore/products-java-spring-boot/src/main/java/com/ibm/product/Product.java
+/Users/yvesdebeer/Developer/UCLL/bluestore/products-java-spring-boot/src/main/java/com/ibm/product/ProductService.java
+/Users/yvesdebeer/Developer/UCLL/bluestore/products-java-spring-boot/src/main/java/com/ibm/product/ProductApplication.java
+/Users/yvesdebeer/Developer/UCLL/bluestore/products-java-spring-boot/src/main/java/com/ibm/product/ProductController.java
