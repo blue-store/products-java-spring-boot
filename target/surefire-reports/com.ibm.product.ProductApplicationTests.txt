@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.ibm.product.ProductApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.547 s - in com.ibm.product.ProductApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.175 s - in com.ibm.product.ProductApplicationTests
