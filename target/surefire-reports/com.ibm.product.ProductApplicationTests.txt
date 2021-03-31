@@ -1,4 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: com.ibm.product.ProductApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.31 s - in com.ibm.product.ProductApplicationTests
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 10.317 s <<< FAILURE! - in com.ibm.product.ProductApplicationTests
+contextLoads  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webSecurityConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'auth0.audience' in value "${auth0.audience}"
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'auth0.audience' in value "${auth0.audience}"
+

@@ -4,13 +4,15 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-@CrossOrigin(origins = "*", allowedHeaders = "*")
+//@CrossOrigin(origins = "http://localhost:8080", allowCredentials = "true")
 @RestController
 public class ProductController {
     
@@ -28,8 +30,19 @@ public class ProductController {
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "/products")
-    public void addProduct(@RequestBody Product product) {
-        productService.addProduct(product);
+    public void addProduct(@RequestBody Product product, @AuthenticationPrincipal Jwt accessToken) {
+        System.out.println("In POST Request");
+        String scope = accessToken.getClaims().get("scope").toString();
+        Boolean partnerRole = scope.contains("partner");
+        
+        if (partnerRole) {
+            System.out.println("Contains sequence 'partner': " + accessToken.getClaims().get("scope").toString());
+            System.out.println("Contains sequence 'partner': " + accessToken.getClaims().get("scope").toString().contains("partner"));
+            productService.addProduct(product);
+            return;
+        } else {
+            return;
+        }
     }
 
     @RequestMapping(method = RequestMethod.PUT, value = "/products/{id}")
