@@ -1,4 +1,5 @@
 com/ibm/product/ProductRepository.class
+com/ibm/product/ScopeValidator.class
 com/ibm/product/AudienceValidator.class
 com/ibm/product/ProductController.class
 com/ibm/product/ProductApplication.class
